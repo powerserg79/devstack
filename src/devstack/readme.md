@@ -6,7 +6,8 @@
 
 ## tear it down
 
-
+This will destroy the stack, volumes will persist so data should be lost if correctly mapped in the `docker-compose.yml`
+  
 ```powershell
 ./down.ps1
 ```
