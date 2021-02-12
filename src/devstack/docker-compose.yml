@@ -45,16 +45,6 @@ services:
     ports:
       - 8083:15672
 
-  # This will show you all the nodes in the swarm 
-  # and the containers that are running on them
-  # http://localhost:8084
-  viz:
-    image: dockersamples/visualizer
-    ports:
-      - 8084:8080
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-
   # setups up a postgres RDBMS, you can login with 
   # username: postgres
   # password: defined below
